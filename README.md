@@ -28,7 +28,9 @@ Extensions
 
 Some important things to keep in mind
 -------------------------------------
-1. You're collaborating! Most of the work for the `Spaceship` class has already been done in the `Floater` class. Don't change it! Your job is to extend the `Floater` class to "build on top of it" to make a `Spaceship` class. 
+1. You're collaborating with me (chandru) and with your Paired Programming partner! Most of the work for the `Spaceship` class has already been done in the parent `Floater` class by me (your 3rd partner!). 
+1. In a real work environment, the `Floater` class would have been given to you as a Library (binary) and you would not be able to change it.
+1. In this case you will be able to change it, but don't modify it! I will test it with the original version of the `Floater` class to verify. Your job is to extend the `Floater` class to "build on top of it" to make a `Spaceship` class. 
 2. To create the `Spaceship` class you need to write a constructor.
 1. Don't declare any duplicate variables in your `Spaceship` class. You are inheriting all the variables you need from `Floater`
 1. Make sure your `Spaceship` constructor initializes all 9 of the `protected` variables it inherits from `Floater`
