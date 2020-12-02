@@ -8,7 +8,9 @@ Suggested steps to complete this assignment
 1. Start a new program in Processing called `AsteroidsGame`. 
 1. Copy the code in `AsteroidsGame.pde` into your program.
 1. Open a new tab and name it `Spaceship.pde`. Copy the class definition from `Spaceship.pde` above. Do the same for `Floater.pde` and `Star.pde`.
-4. Write the `Spaceship` constructor. Make sure you initialize all 9 of the inherited `protected` member variables. You may also find the [Asteroids Part 2 slide presentation useful](https://docs.google.com/presentation/d/1pPeUvTAbIjtZYvfQIv54BDuunra8H6imO654amT6NI4/edit#slide=id.p1). You may also find [this sample Spaceship program](https://chandrunarayan.github.io/sketches/AsteroidsVariableDemo/) helpful in understanding how the `protected Floater` variables affect the Spaceship's movement.
+4. Write the `Spaceship` constructor. Make sure you initialize all 9 of the inherited `protected` member variables. 
+1. You may also find the [Asteroids Part 2 slide presentation useful](https://docs.google.com/presentation/d/1pPeUvTAbIjtZYvfQIv54BDuunra8H6imO654amT6NI4/edit#slide=id.p1). 
+1. In addition, [This sample Spaceship program](https://chandrunarayan.github.io/sketches/AsteroidsVariableDemo/) helpful in understanding how the `protected Floater` variables affect the Spaceship's movement.
 5. At the top of `AsteroidsGame.pde`, declare a variable of type `Spaceship`
 6. Initialize the `Spaceship` as a new instance of the class
 7. In `draw()` in `AsteroidsGame.pde` call the Spaceship's `show()` function
@@ -23,7 +25,7 @@ These steps are only a suggestion. Your Asteroids game doesn't have to work or a
 
 Extensions
 ----------
-* You can smooth out the control of the ship using booleans for each key press. There is an example [here](https://chandrunarayan.github.io/TwoKeys/)
+* You can smooth out the control of the ship using booleans for each key press. [There is an example here](https://chandrunarayan.github.io/TwoKeys/)
 * If you have extra time and are looking for a challenge, you might try to add an animation of "rockets" that appear from the back of the ship when you accelerate, simliar to the [this sample Spaceship program](https://chandrunarayan.github.io/sketches/AsteroidsVariableDemo/). The best way to do this is to override `show()` by copying the `show()` function from Floater into your Spaceship class. Then add an `if` statement in your Spaceship `show()` function right after `endShape(CLOSE);`. If your rockets are firing, draw additional shapes just behind your Spaceship. You can sketch out the shapes on graph paper with the ship centered at (0,0) and pointing right. The `show()` function will rotate and translate the rocket shapes to the correct position on the screen.
 
 Some important things to keep in mind
