@@ -23,7 +23,7 @@ These steps are only a suggestion. Your Asteroids game doesn't have to work or a
 
 Extensions
 ----------
-* You can smooth out the control of the ship using booleans for each key press. There is an example [here](https://chandrunarayan.github.io/TwoKeys/   
+* You can smooth out the control of the ship using booleans for each key press. There is an example [here](https://chandrunarayan.github.io/TwoKeys/)
 * If you have extra time and are looking for a challenge, you might try to add an animation of "rockets" that appear from the back of the ship when you accelerate, simliar to the [this sample Spaceship program](https://chandrunarayan.github.io/sketches/AsteroidsVariableDemo/). The best way to do this is to override `show()` by copying the `show()` function from Floater into your Spaceship class. Then add an `if` statement in your Spaceship `show()` function right after `endShape(CLOSE);`. If your rockets are firing, draw additional shapes just behind your Spaceship. You can sketch out the shapes on graph paper with the ship centered at (0,0) and pointing right. The `show()` function will rotate and translate the rocket shapes to the correct position on the screen.
 
 Some important things to keep in mind
