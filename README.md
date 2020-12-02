@@ -17,7 +17,7 @@ Suggested steps to complete this assignment
 10. Add code to the `draw()` in `AsteroidsGame.pde` to `move()` the Spaceship
 11. Finish the `Star` class in `Star.pde` 
 12. Finally, add code to `AsteroidsGame.pde` that declares and initializes an array of instances of the `Star` class to create a number of stars in random positions
-12. Note that for full credit, **you MUST include instructions on how to operate your Spaceship in the `index.html` file.** For an example look at slides 33 & 34 in the [Asteroids slide presentation](https://docs.google.com/presentation/d/1HfHQTei9qgkBEBhNqUKqmAc6g2V3x8FDprajTp5IZuE/edit#slide=id.gac26ff81b9_2_0)
+12. Note that for full credit, **you MUST include instructions on how to operate your Spaceship in the `index.html` file.** For an example look at slides 32 & 33 in the [Asteroids slide presentation](https://docs.google.com/presentation/d/1HfHQTei9qgkBEBhNqUKqmAc6g2V3x8FDprajTp5IZuE/edit#slide=id.gac26ff81b9_2_0)
 
 These steps are only a suggestion. Your Asteroids game doesn't have to work or act like any other. Have fun and be creative.
 
