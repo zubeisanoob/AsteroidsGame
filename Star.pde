@@ -14,6 +14,6 @@ class Star
   public void show() {
     stroke(myCol); // change exterior color of star
     fill(myCol); // changes color of star
-    ellipse(myX, myY, mySz, mySz); // draw star with ellipse
+    ellipse((float)myX, (float)myY, (float)mySz, (float)mySz); // draw star with ellipse
   }
 }
