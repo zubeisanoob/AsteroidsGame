@@ -18,7 +18,7 @@ class Spaceship extends Floater  {
         yCorners[0] = 0;
         yCorners[1] = 8;
         yCorners[2] = -8;
-        bob = new Laser(myCenterX, myCenterY, myPointDirection);
+        //bob = new Laser(myCenterX, myCenterY, myPointDirection);
     }
     /*
     public void shoot() {
