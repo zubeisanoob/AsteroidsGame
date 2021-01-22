@@ -1,11 +1,15 @@
 Spaceship bob; // declaring an instance of the spaceship object
-Asteroid cat;
 Star [] stars; // declaring an array of instances of the star object
+ArrayList <Asteroid> asteroids; // declare an arraylist with asteroid class
 public void setup()
 {
   stars = new Star[100]; // setting # of stars in screen
   bob = new Spaceship(); // initializing bob as a new spaceship
-  cat = new Asteroid();
+  asteroids = new ArrayList <Asteroid>();
+  // initialize arraylist with instances of Asteroid (5 asteroids)
+  for (int i = 0; i < 5; i++) {
+    asteroids.add(new Asteroid());
+  }
   // looping through each position in the stars array and initializing it to an instance of a star object
   for (int i = 0; i < stars.length; i++) {
     stars[i] = new Star();
@@ -14,6 +18,7 @@ public void setup()
 }
 public void draw()
 {
+  
   background(0);
   // loops through stars and evokes show method to draw the stars
   for (int i = 0; i < stars.length; i++) {
@@ -23,7 +28,18 @@ public void draw()
   bob.move();
   // draws bob with the show method
   bob.show();
-  cat.show();
+  // move then show each asteroid
+  for (int i = 0; i < 5; i++) {
+    asteroids.get(i).move();
+    asteroids.get(i).show();
+  }
+  // display spaceship values with text
+  textSize(15);
+  text("myCenterX:" + String.valueOf((int)(bob.myCenterX)), 10, 20);
+  text("myCenterY:" + String.valueOf((int)(bob.myCenterY)), 10, 40); 
+  text("myPointDirection:" + String.valueOf((int)(bob.myPointDirection)), 10, 60); 
+  text("myXspeed:" + String.valueOf((int)(bob.myXspeed)), 10, 80); 
+  text("myYspeed:" + String.valueOf((int)(bob.myYspeed)), 10, 100);
 }
 
 public void keyPressed() {
