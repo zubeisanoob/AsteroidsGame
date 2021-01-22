@@ -60,6 +60,8 @@ public void keyPressed() {
     bob.changeX((int)(Math.random() * width));
     bob.changeY((int)(Math.random() * height));
     bob.changeDirection((int)(Math.random() * 360));
+    bob.changeXspeed(0);
+    bob.changeYspeed(0);
   }
   /*
   if (keyCode == 32) {
