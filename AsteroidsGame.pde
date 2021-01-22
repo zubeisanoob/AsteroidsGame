@@ -7,7 +7,7 @@ public void setup()
   bob = new Spaceship(); // initializing bob as a new spaceship
   asteroids = new ArrayList <Asteroid>();
   // initialize arraylist with instances of Asteroid (5 asteroids)
-  for (int i = 0; i < 0; i++) {
+  for (int i = 0; i < 5; i++) {
     asteroids.add(new Asteroid());
   }
   // looping through each position in the stars array and initializing it to an instance of a star object
