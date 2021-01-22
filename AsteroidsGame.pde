@@ -7,7 +7,7 @@ public void setup()
   bob = new Spaceship(); // initializing bob as a new spaceship
   asteroids = new ArrayList <Asteroid>();
   // initialize arraylist with instances of Asteroid (5 asteroids)
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 0; i++) {
     asteroids.add(new Asteroid());
   }
   // looping through each position in the stars array and initializing it to an instance of a star object
@@ -20,6 +20,12 @@ public void draw()
 {
   
   background(0);
+  if (asteroids.size() == 0) {
+    textSize(30);
+    text("You won!", width/2 - 50, height/2);
+    bob.changeXspeed(0);
+    bob.changeYspeed(0);
+  }
   // loops through stars and evokes show method to draw the stars
   for (int i = 0; i < stars.length; i++) {
     stars[i].show();
@@ -29,9 +35,14 @@ public void draw()
   // draws bob with the show method
   bob.show();
   // move then show each asteroid
-  for (int i = 0; i < 5; i++) {
-    asteroids.get(i).move();
-    asteroids.get(i).show();
+  for (int i = 0; i < asteroids.size(); i++) {
+    if (dist((float)bob.myCenterX, (float)bob.myCenterY, (float)asteroids.get(i).myCenterX, (float)asteroids.get(i).myCenterY) < 20) {
+      asteroids.remove(i);
+    } else {
+      asteroids.get(i).move();
+      asteroids.get(i).show();
+    }
+    
   }
   // display spaceship values with text
   textSize(15);
