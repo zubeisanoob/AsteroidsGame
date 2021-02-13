@@ -23,19 +23,19 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     myPointDirection+=degreesOfRotation;   
   }   
   public void move ()   //move the floater in the current direction of travel
-  {      
+  {
     //change the x and y coordinates by myXspeed and myYspeed       
     myCenterX += myXspeed;    
     myCenterY += myYspeed;     
 
     //wrap around screen    
-    if(myCenterX >width)
+    if (myCenterX > width)
     {     
       myCenterX = 0;    
     }    
     else if (myCenterX<0)
-    {     
-      myCenterX = width;    
+    {
+      myCenterX = width;
     }    
     if(myCenterY >height)
     {    
@@ -72,5 +72,7 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     //"unrotate" and "untranslate" in reverse order
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
-  }   
+  }
+
+  
 } 
